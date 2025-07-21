@@ -154,7 +154,7 @@ input[type="button"]:hover {
     right: 82%;
     width: 100px;
     height: 100px;
-    /* background-color: #ee626b; */
+    background-color: #ee626b;
     border-radius: 80px;
 }
 
@@ -193,10 +193,12 @@ input[type="button"]:hover {
     justify-content: center;
     /* align-items: center; */
     flex-wrap: wrap;
+    position: relative;
     width: 300px;
     height: 200px;
-   background-color: white;
-    box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.15);;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    ;
     border-radius: 25px;
 }
 
@@ -206,16 +208,188 @@ input[type="button"]:hover {
     margin-top: 20px;
     padding: 35px;
     align-items: center;
-    width: 80px;
-    height: 80px;
-    background-color:#0071f8;
+    width: 90px;
+    height: 90px;
+    background-color: #0071f8;
     border-radius: 80px;
 }
-.img-contain .image{
-width: 40px;
-height: 40px;
-}
-.items .info{
-font-size: 17px;
 
+.img-contain .image {
+    width: 40px;
+    height: 40px;
+}
+
+.img-contain .info {
+    font-size: 17px;
+    width: 250px;
+    position: absolute;
+    top: 60%;
+    left: 27%;
+}
+
+.img-contain:hover {
+    background-color: #ee626b;
+    transition-duration: 0.3s;
+}
+
+/* trending */
+.trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: aqua; */
+    width: 100%;
+    height: 600px;
+}
+
+.container-03 {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #1220b9; */
+    width: 90%;
+    height: 500px;
+}
+
+.container-03 .content {
+    width: 100%;
+    height: fit-content;
+    /* background-color: aquamarine; */
+}
+
+.content h2 {
+    color: #ee626b;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.content h1 {
+    display: inline-block;
+    color: black;
+}
+
+.content a {
+    width: 140px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    float: right;
+    margin: 30px;
+    padding: 15px;
+    background-color: #ee626b;
+    color: white;
+    border-radius: 25px;
+}
+
+.content a:hover {
+    background-color: #0071f8;
+    transition-duration: 0.5s;
+}
+
+.games {
+
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* background-color: #0071f8;    */
+    height: 300px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 320px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+}
+
+.card img {
+    /* position: relative; */
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card .heading {
+    display: block;
+    position: relative;
+    margin: 0;
+}
+
+.heading h4 {
+    font-size: 18px;
+    color:#7a7a7a;
+    margin: 5px 0 0 15px;
+}
+.heading h3 {
+    font-size: 20px;
+    margin: 5px 0 0 15px;
+}
+.heading h3:hover{
+    color: #0071f8;
+}
+.card .price {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60px;
+    padding: 10px;
+    position: absolute;
+    background-color: #0071f8;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    right: 0;
+    top: 0;
+    margin: 20px 10px 0 10px;
+}
+
+.price em {
+    display: block;
+    font-style: normal;
+    text-decoration: line-through;
+}
+
+.heading .card-icon {
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 10px;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #ee626b;
+    width: 40px;
+    height: 40px;
+}
+
+.heading i {
+    position: absolute;
+    right: 12px;
+    top: 20px;
+}
+
+.card-icon:hover {
+    background-color: #0071f8;
+    transition-duration: 0.4s;
+}
+/* Most-played games */
+.most-played{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 100%;
+    height: 600px;
+    background-color:#f7f7f7 ;
+    border-radius: 200px 200px 200px 200px;
+}
+.container-04 {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #1220b9; */
+    width: 90%;
+    height: 500px;
+}
+.container-04 .content {
+    width: 100%;
+    height: fit-content;
+    /* background-color: aquamarine; */
 }
