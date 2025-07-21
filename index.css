@@ -1,5 +1,5 @@
 * {
-    /* margin: 0; */
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -17,23 +17,19 @@
     /* background-color: aqua; */
     width: 90%;
     justify-content: flex-end;
-
 }
-
 .navbar .logo {
     position: absolute;
     left: 0;
     padding: 20px;
     /* background-color: blue; */
 }
-
 .navbar ul {
     list-style: none;
     display: flex;
     padding: 20px;
 
 }
-
 .navbar li a {
     padding: 10px 15px;
     margin: 10px;
@@ -41,17 +37,14 @@
     color: white;
     text-decoration: none;
 }
-
-ul .active {
-    background-color: #ee626b;
-    border-radius: 20px;
-}
-
 .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 25px;
 }
-
+ .navbar li:last-child a{
+    background-color: #ee626b; 
+    border-radius: 20px;
+}
 /* main section */
 .main {
     width: 100%;
@@ -62,7 +55,6 @@ ul .active {
     /* flex-wrap: wrap ; */
     align-items: center;
 }
-
 .main .container-01 {
     display: flex;
     justify-content: center;
@@ -70,7 +62,6 @@ ul .active {
     width: 100%;
     height: 600px;
 }
-
 .container-01 .heading {
     display: flex;
     justify-content: flex-start;
@@ -79,8 +70,7 @@ ul .active {
     width: 90%;
     height: fit-content;
 }
-
-.heading .content {
+.heading .content-1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -88,31 +78,26 @@ ul .active {
     width: 50%;
     /* background-color: aqua; */
 }
-
-.content h5 {
+.content-1 h5 {
     color: white;
     font-size: 22px;
     margin: 10px;
 }
-
-.content h1 {
+.content-1 h1 {
     color: white;
     font-size: 50px;
     margin: 10px;
 }
-
-.content p {
+.content-1 p {
     color: white;
     font-size: 18px;
     margin-bottom: 70px;
     font-family: sans-serif;
 }
-
-.content .search {
+.content-1 .search {
     /* background-color: #ee626b   ; */
     position: relative;
 }
-
 .search input[type="search"] {
     padding: 19px;
     width: 500px;
@@ -120,7 +105,6 @@ ul .active {
     border-radius: 30px;
     border: none;
 }
-
 .search input[type="button"] {
     position: absolute;
     right: 0;
@@ -132,21 +116,19 @@ ul .active {
     color: white;
     width: 180px;
 }
-
 input[type="button"]:hover {
     background-color: rgba(0, 153, 255, 0.745);
     transition-duration: 0.3s;
 }
-
 .img-01 {
     margin-left: 220px;
     position: relative;
+    /* width: 300PX; */
 }
-
 .img-01 img {
     border-radius: 10px;
+    width: 300PX;
 }
-
 .offer {
     position: absolute;
     /* left: 0;  */
@@ -157,15 +139,13 @@ input[type="button"]:hover {
     background-color: #ee626b;
     border-radius: 80px;
 }
-
 .offer h2 {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 30px;
     color: white;
     font-size: 30px;
 }
-
 /*  */
 .featured {
     display: flex;
@@ -174,9 +154,7 @@ input[type="button"]:hover {
     z-index: 1;
     top: -100px;
     height: fit-content;
-
 }
-
 .container-02 {
     display: flex;
     justify-content: space-between;
@@ -187,7 +165,6 @@ input[type="button"]:hover {
     /* position: relative;
     top:10%; */
 }
-
 .container-02 .items {
     display: flex;
     justify-content: center;
@@ -198,10 +175,8 @@ input[type="button"]:hover {
     height: 200px;
     background-color: white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-    ;
     border-radius: 25px;
 }
-
 .items .img-contain {
     display: flex;
     justify-content: center;
@@ -213,12 +188,10 @@ input[type="button"]:hover {
     background-color: #0071f8;
     border-radius: 80px;
 }
-
 .img-contain .image {
     width: 40px;
     height: 40px;
 }
-
 .img-contain .info {
     font-size: 17px;
     width: 250px;
@@ -226,12 +199,10 @@ input[type="button"]:hover {
     top: 60%;
     left: 27%;
 }
-
 .img-contain:hover {
     background-color: #ee626b;
     transition-duration: 0.3s;
 }
-
 /* trending */
 .trending {
     display: flex;
@@ -242,7 +213,6 @@ input[type="button"]:hover {
     width: 100%;
     height: 600px;
 }
-
 .container-03 {
     display: flex;
     flex-wrap: wrap;
@@ -250,24 +220,20 @@ input[type="button"]:hover {
     width: 90%;
     height: 500px;
 }
-
 .container-03 .content {
     width: 100%;
     height: fit-content;
-    /* background-color: aquamarine; */
+    /* background-color: aquamarine;+ */
 }
-
 .content h2 {
     color: #ee626b;
     font-size: 20px;
     margin-left: 15px;
 }
-
 .content h1 {
     display: inline-block;
     color: black;
 }
-
 .content a {
     width: 140px;
     text-decoration: none;
@@ -280,21 +246,17 @@ input[type="button"]:hover {
     color: white;
     border-radius: 25px;
 }
-
 .content a:hover {
     background-color: #0071f8;
     transition-duration: 0.5s;
 }
-
 .games {
-
     display: flex;
     justify-content: space-around;
     width: 100%;
     /* background-color: #0071f8;    */
     height: 300px;
 }
-
 .card {
     position: relative;
     width: 300px;
@@ -303,29 +265,26 @@ input[type="button"]:hover {
     border-radius: 10px;
     background-color: #eeeeee;
 }
-
 .card img {
     /* position: relative; */
     width: 300px;
     border-radius: 10px;
 }
-
 .card .heading {
     display: block;
     position: relative;
     margin: 0;
 }
-
 .heading h4 {
     font-size: 18px;
-    color:#7a7a7a;
+    color: #7a7a7a;
     margin: 5px 0 0 15px;
 }
 .heading h3 {
     font-size: 20px;
     margin: 5px 0 0 15px;
 }
-.heading h3:hover{
+.heading h3:hover {
     color: #0071f8;
 }
 .card .price {
@@ -342,13 +301,11 @@ input[type="button"]:hover {
     top: 0;
     margin: 20px 10px 0 10px;
 }
-
 .price em {
     display: block;
     font-style: normal;
     text-decoration: line-through;
 }
-
 .heading .card-icon {
     position: absolute;
     z-index: 2;
@@ -360,26 +317,25 @@ input[type="button"]:hover {
     width: 40px;
     height: 40px;
 }
-
 .heading i {
     position: absolute;
     right: 12px;
     top: 20px;
 }
-
 .card-icon:hover {
     background-color: #0071f8;
     transition-duration: 0.4s;
 }
+
 /* Most-played games */
-.most-played{
+.most-played {
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     width: 100%;
     height: 600px;
-    background-color:#f7f7f7 ;
-    border-radius: 200px 200px 200px 200px;
+    background-color: #f7f7f7;
+    border-radius: 150px 150px 150px 150px;
 }
 .container-04 {
     display: flex;
@@ -392,4 +348,209 @@ input[type="button"]:hover {
     width: 100%;
     height: fit-content;
     /* background-color: aquamarine; */
+}
+.played-game {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 300px;
+    /* background-color: #7a7a7a */
+}
+.played-game .card-02 {
+
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #f1edee;
+}
+.card-02 img {
+    width: 200px;
+    height: 195px;
+    border-radius: 10px;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.head span {
+    text-align: center;
+    display: block;
+    margin: 12px 0 0 0;
+    color: #7a7a7a;
+}
+.head h4 {
+    display: block;
+    font-size: 22px;
+    margin: 10px 0 0 0;
+}
+.head a {
+    text-decoration: none;
+    background-color: #ee626b;
+    padding: 12px;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+}
+.head a:hover {
+    background-color: #0071f8;
+    transition-duration: 0.4s;
+}
+
+/* categories */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin: 100px 0 0 0;
+}
+.container-05 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+    width: 100%;
+}
+.content-head h3 {
+    text-align: center;
+    color: #ee626b;
+}
+.content-head h1 {
+    font-size: 3em;
+    margin: 0;
+}
+.categories-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #0071f8;
+}
+.categories-card img {
+    width: 250px;
+    height: 220px;
+    border-radius: 20px;
+}
+
+/* img-card */
+.img-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+    max-width: 100%;
+    height: auto;
+    /* background-color: #0071f8; */
+}
+.img-card .img-01 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 600px;
+    /* background-color: #ee626b; */
+    margin: 0;
+}
+.img-01 img {
+    width: 550px;
+    height: 510px;
+}
+.img-01 .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    border-radius: 40px;
+    width: 550px;
+    height: 530px;
+    background-color: rgb(247, 247, 247);
+}
+.info .content {
+    width: 65%;
+    height: 350px;
+    color: #ee626b;
+    /* background-color: #7a7a7a; */
+}
+.content h3 {
+    margin: 10px 0 0 20px;
+}
+.content h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+.content span {
+    color: #0071f8;
+}
+.content p {
+    color: #4a4a4a;
+    margin: 50px 0 0 10px;
+}
+.content .shop {
+    position: absolute;
+    left: 15%;
+    margin-top: 50px;
+}
+/* info-2 */
+.info-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 32%;
+    border-radius: 40px;
+    width: 550px;
+    height: 500px;
+    background-color: rgb(247, 247, 247);
+}
+.info-2 .content {
+    position: relative;
+    width: 75%;
+    height: 350px;
+    color: #ee626b;
+}
+.content input[type="email"] {
+    padding: 15px;
+    margin-top: 50px;
+    width: 350px;
+    border-radius: 20px;
+    border: none;
+}
+.content .shop-2 {
+    position: absolute;
+    font-size: 16PX;
+    padding: 15px;
+    right: 0;
+    margin-top: 50px;
+    width: 200px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 150px;
+    margin-top: 20%;
+    border-radius: 150px 150px 0 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/footer-bg.jpg);
+    background-size: cover;
+}
+.foot {
+    margin-top: 30px;
+    font-size: 20px;
+}
+.foot a {
+    text-decoration: none;
+    color: white;
 }
